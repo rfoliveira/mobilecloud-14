@@ -257,9 +257,7 @@ public class SecuredRestBuilder extends RestAdapter.Builder {
 	public SecuredRestBuilder setClientSecret(String clientSecret) {
 		this.clientSecret = clientSecret;
 		return this;
-	}
-	
-		
+	}		
 
 	@Override
 	public RestAdapter build() {

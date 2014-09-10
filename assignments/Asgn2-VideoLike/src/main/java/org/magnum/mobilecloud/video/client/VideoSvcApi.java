@@ -137,6 +137,8 @@ public interface VideoSvcApi {
 	public static final String TITLE_PARAMETER = "title";
 	
 	public static final String DURATION_PARAMETER = "duration";
+	
+	public static final String ID_PARAMETER = "id";
 
 	public static final String TOKEN_PATH = "/oauth/token";
 
@@ -148,6 +150,8 @@ public interface VideoSvcApi {
 	
 	// The path to search videos by title
 	public static final String VIDEO_DURATION_SEARCH_PATH = VIDEO_SVC_PATH + "/search/findByDurationLessThan";
+	
+	public static final String VIDEO_SVC_PATH_ID = VIDEO_SVC_PATH + "/{id}";
 
 	@GET(VIDEO_SVC_PATH)
 	public Collection<Video> getVideoList();
